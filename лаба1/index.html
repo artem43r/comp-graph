@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Лабораторная работа — Задание 9</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <h1>Лабораторная работа №1</h1>
+    <h2>Задание 9 — Таймер / Секундомер (Canvas)</h2>
+
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+
+    <div id="controls" class="controls">
+        <div>
+            <button onclick="startStopwatch()">▶️ Старт</button>
+            <button onclick="stopTimer()">⏸️ Стоп</button>
+            <button onclick="resetTimer()">🔄 Сброс</button>
+            <button onclick="lapTimer()">⏱️ Лапа</button>
+        </div>
+
+        <div>
+            <label>Таймер:</label>
+            <input type="number" id="timerInput" min="1" max="3600" value="60">
+            сек
+            <button onclick="startCountdown()">⏳ Старт таймер</button>
+        </div>
+
+        <div id="lapsList"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
